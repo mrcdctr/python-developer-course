@@ -1,0 +1,23 @@
+# Excel and PDF Automation Cheat Sheet
+
+## Working with Excel (`pandas`, `openpyxl`)
+import pandas as pd
+
+# Read Excel
+df = pd.read_excel("file.xlsx")
+
+# Modify Data
+df["New Column"] = df["Existing Column"] * 2
+
+# Save Excel
+df.to_excel("output.xlsx", index=False)
+
+## Working with PDFs (`PyPDF2`)
+from PyPDF2 import PdfMerger
+
+# Merge PDFs
+merger = PdfMerger()
+merger.append("file1.pdf")
+merger.append("file2.pdf")
+merger.write("merged.pdf")
+merger.close()

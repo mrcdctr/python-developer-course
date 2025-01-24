@@ -1,0 +1,19 @@
+# Web Scraping Cheat Sheet
+
+## Libraries
+- `requests` for making HTTP requests.
+- `BeautifulSoup` for parsing HTML.
+
+## Example: Fetch Page Content
+import requests
+url = "https://example.com"
+response = requests.get(url)
+print(response.text)
+
+## Example: Parse HTML with BeautifulSoup
+from bs4 import BeautifulSoup
+soup = BeautifulSoup(response.text, "html.parser")
+
+# Extract All Links
+links = [a["href"] for a in soup.find_all("a", href=True)]
+print(links)

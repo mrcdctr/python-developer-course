@@ -1,0 +1,32 @@
+# Python Basics Cheat Sheet
+
+## Variables
+x = 10  # Integer
+y = 3.14  # Float
+name = "Python"  # String
+
+## Data Types
+- int, float, str, list, tuple, dict, set
+
+## Loops
+# For Loop
+for i in range(5):
+    print(i)
+
+# While Loop
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+
+## Conditionals
+if x > 5:
+    print("x is greater than 5")
+elif x == 5:
+    print("x is equal to 5")
+else:
+    print("x is less than 5")
+
+## Functions
+def greet(name):
+    return f"Hello, {name}!"
