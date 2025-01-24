@@ -1,4 +1,16 @@
+# Byte-compiled files
 *.pyc
 __pycache__/
+
+# Temporary or system files
 .DS_Store
+
+# Excel files (optional, if you want to exclude output files)
 *.xlsx
+
+# PDF files (optional, if you want to exclude generated PDFs)
+*.pdf
+
+# Other files to exclude
+env/  # Virtual environment, if applicable
+.env  # Environment variables file
